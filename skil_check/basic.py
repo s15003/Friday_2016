@@ -24,6 +24,7 @@ def print_hoge():
     from random import randint
 
 
+
 #100から1000までの偶数のみ表示して下さい
 
 def print_even_from_100_to_1000():
