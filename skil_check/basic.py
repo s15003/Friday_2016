@@ -13,8 +13,7 @@ def print_how_many_vears_to_80():
 
 #与えられたパラメータが「偶数」か「奇数」かを出力して下さい
 def print_odd_or_even(target):
-    num = 20
-    if num % 2 == 1:
+    if target % 2 == 1:
         print("奇数")
     else:
         print("偶数")
@@ -22,18 +21,18 @@ def print_odd_or_even(target):
 #randomモジュールを使用して0-50の整数を生成し、２５がでるまで「ほげ」と出力して下さい
 def print_hoge():
     from random import randint
+    while randint(0,50) !=25:
+        print("hoge")
 
 
 
 #100から1000までの偶数のみ表示して下さい
-
 def print_even_from_100_to_1000():
-
-
-
+    for num in range(100, 1000):
+        if num %2 == 0:
+            print(num)
 
 if __name__ == '__main__':
-
     print_self_information()
     print_how_many_vears_to_80()
     print_odd_or_even(10)
