@@ -1,30 +1,25 @@
 #与えられた２つのパラメータの合計を２倍したものが６０を超えているかどうか
 def check_sum_2times_over_60(par1, par2):
-    if (par1+par2)*2 >= 60:
-        print("こえてます")
-    else:
-        print("こえてないっす")
+    return (par1 + par2) * 2 >= 60
+
 
 
 #与えられた金額に消費税率８％を含めた値が５０００を超えているかどうか
 def tax_include(cost):
-    if (cost * 1.08) > 5000:
-        print("超えてるんだよなぁ")
-    else:
-        print("超えてません")
+    return (cost * 1.08) > 5000
 
 
 #与えら  れたスコアを８０位上なら'A'、６０位上８０未満なら'B'、４５以上６０未満ならC
 #４５未満は'F'と返す
 def judge_rank(score):
     if score >= 80:
-        print("A")
+        return "A"
     elif score >= 60:
-        print("B")
+        return "B"
     elif score >= 45:
-        print("C")
+        return "C"
     else:
-        print("F")
+        return "F"
 
 #与えられた数値の階乗を返す。ただし再帰は使用禁止
 def factorial(num):
