@@ -31,7 +31,7 @@ def factorial(num):
     if num == 0:
         return 1
     else:
-        print (num * factorial(num - 1))
+        return num * factorial(num - 1)
 
 
 #与えられた数値の２の階乗を返す。再帰使用禁止。　便利な演算子利用禁止。
@@ -41,4 +41,4 @@ if __name__ == '__main__':
     check_sum_2times_over_60(10, 12)
     tax_include(4800)
     judge_rank(49)
-    factorial()
+    factorial(5)
